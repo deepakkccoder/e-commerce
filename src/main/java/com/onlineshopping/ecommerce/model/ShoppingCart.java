@@ -12,6 +12,7 @@ public class ShoppingCart {
     @Id
     private String id;
     private Date dateAdded;
+    private User user;
     private Map<Product, Integer> productMap;
     public String getId() {
         return id;
@@ -35,5 +36,12 @@ public class ShoppingCart {
 
     public void setProductMap(Map<Product, Integer> productMap) {
         this.productMap = productMap;
+    }
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
     }
 }
